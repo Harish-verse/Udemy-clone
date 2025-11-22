@@ -48,6 +48,7 @@ body{
 .navbar__s3{
     display: flex;
     gap: 10px;
+    cursor: pointer;
 }
 
 .mylearning{
@@ -75,6 +76,7 @@ body{
     justify-content: space-around;
     border-bottom: solid black 1px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .Categories p{
@@ -83,6 +85,13 @@ body{
     padding: 10px;
     border-radius: 30px;
     color: white;
+   
+}
+
+.Categories p:hover{
+background-color: transparent;
+color: #A435f0;
+transition: 1s; 
 }
 
 .sale-image{
@@ -101,8 +110,25 @@ body{
     width: 25%;
     padding: 2%;
     left: 70px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    
 }
 
+@keyframes zoom {
+
+    0%{
+        transform: scale(0);
+        opacity: 0;
+
+    }
+
+    100%{
+       transform: scale(1);
+       opacity: 1;
+       
+    }
+}
 .recommended{
     padding:15px;
 }
